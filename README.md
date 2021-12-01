@@ -17,7 +17,7 @@ Cities consume 2/3 of global energy and consequently release a large amount of a
 TBD
 
 ## Code reference
-Currently here for workflow code but needs to be confirmed:  https://github.com/IMMM-SFA/wrf_historical
+Vahmani, Pouya, Rastogi, Deeksha, & Thurber, Travis. (2021). IMMM-SFA/wrf_historical: v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.5748047
 
 ## Data reference
 
