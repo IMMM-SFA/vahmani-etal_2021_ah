@@ -43,20 +43,20 @@ TBD
 | WRF | 4.2.1 | https://github.com/wrf-model/WRF/releases/tag/v4.2.1 | NA |
 
 ## Reproduce my experiment
-1. Follow the steps at IMMM-SFA/wrf_historical (https://doi.org/10.5281/zenodo.5748047) to produce historical data to be used as boundary conditions. The full data set is available at __[1]__.
+1. Follow the steps at IMMM-SFA/wrf_historical (https://doi.org/10.5281/zenodo.5748047) to produce historical data to be used as boundary conditions. The full data set is available at __[[1]](https://app.globus.org/file-manager?origin_id=c296b088-b769-11eb-afd8-e1e7a67e00c1&origin_path=%2F)__.
 2. Use the NDOWN package which is part of WRFv4.2.1 to downscale the results of step 1 over Los Angeles:
    * Follow the user guide for NDOWN: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/CASES/NestRuns/ndown.php
-   * Use the `namelist.input` and `namelist.wps` files provided at __[2]__.
-   * The resulting subset of data is available at __[2]__.
+   * Use the `namelist.input` and `namelist.wps` files provided at __[[2]](https://doi.org/10.5281/zenodo.5834929)__.
+   * The resulting subset of data is available at __[[2]](https://doi.org/10.5281/zenodo.5834929)__.
 3. Run the WU1 simulations:
    * Run WRF for the three nested domains over Los Angeles.
-   * Use the `namelist.input`, all the `.TBL` files, the `myoutfields.txt` file, and the initial conditions `wrfbdy_d01`, `wrfinput_d01`, and `wrfinput_d02` provided at __[3]__ and __[4]__.
-   * The results are available at __[3]__, __[4]__, __[5]__, __[6]__, & __[7]__.
+   * Use the `namelist.input`, all the `.TBL` files, the `myoutfields.txt` file, and the initial conditions `wrfbdy_d01`, `wrfinput_d01`, and `wrfinput_d02` files provided at __[[3]](https://doi.org/10.5281/zenodo.5838306)__ and __[[4]](https://doi.org/10.5281/zenodo.5839178)__.
+   * The results are available at __[[3]](https://doi.org/10.5281/zenodo.5838306)__, __[[4]](https://doi.org/10.5281/zenodo.5839178)__, __[[5]](https://doi.org/10.5281/zenodo.5847487)__, __[[6]](https://doi.org/10.5281/zenodo.5855041)__, & __[[7]](https://doi.org/10.5281/zenodo.5855061)__.
 4. Run the WU2 simulations:
-   * Repeat the WU1 simulations, but with the anthropogenic heating parameters available in this repository here [here](3.AH_LA/) substituted into WRF's `URBPARM.TBL` parameter file.
+   * Repeat the WU1 simulations, but with the anthropogenic heating parameters available in this repository [here](3.AH_LA/) substituted into WRF's `URBPARM.TBL` parameter file.
 
 ## Reproduce my figures
-Use the scripts from the folder [4.Figures/1.scripts](4.Figures/1.scripts) to reproduce the figures used in this publication:
+Use the scripts available in this repository [here](4.Figures/1.scripts) to reproduce the figures used in this publication:
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
