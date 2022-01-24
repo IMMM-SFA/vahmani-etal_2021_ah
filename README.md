@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5838392.svg)](https://doi.org/10.5281/zenodo.5838392)
 
-# vahmani-etal_2021_tbd
+# vahmani-etal_2021_AH
 
 **Anthropogenic heating of the urban environment: an investigation of feedback dynamics between urban micro-climate and decomposed anthropogenic heating from buildings**
 
@@ -46,15 +46,14 @@ TBD
 1. Follow the steps at IMMM-SFA/wrf_historical (https://doi.org/10.5281/zenodo.5748047) to produce historical data to be used as boundary conditions. The full data set is available at __[1]__.
 2. Use the NDOWN package which is part of WRFv4.2.1 to downscale the results of step 1 over Los Angeles:
    * Follow the user guide for NDOWN: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/CASES/NestRuns/ndown.php
-   * Use the `namelist.input` and `namelist.wps` files provided at __[1]__.
-   * The resulting subset of data is available at __[1]__.
+   * Use the `namelist.input` and `namelist.wps` files provided at __[2]__.
+   * The resulting subset of data is available at __[2]__.
 3. Run the WU1 simulations:
    * Run WRF for the three nested domains over Los Angeles.
-   * Use the `namelist.input` file provided in this repository [here](2.WRF_LA/namelist.input). TODO
-   * The results are available at __[3]__, __[4]__, __[5]__, __[6]__, & __[7]__. TODO
+   * Use the `namelist.input`, all the `.TBL` files, the `myoutfields.txt` file, and the initial conditions `wrfbdy_d01`, `wrfinput_d01`, and `wrfinput_d02` provided at __[3]__ and __[4]__.
+   * The results are available at __[3]__, __[4]__, __[5]__, __[6]__, & __[7]__.
 4. Run the WU2 simulations:
-   * Repeat the WU1 simulations, but with the anthropogenic heating parameters available here [here](3.AH_LA/) substituted into WRF's `URBPARM.TBL` parameter file. TODO
-   * The results are available at TODO.
+   * Repeat the WU1 simulations, but with the anthropogenic heating parameters available in this repository here [here](3.AH_LA/) substituted into WRF's `URBPARM.TBL` parameter file.
 
 ## Reproduce my figures
 Use the scripts from the folder [4.Figures/1.scripts](4.Figures/1.scripts) to reproduce the figures used in this publication:
